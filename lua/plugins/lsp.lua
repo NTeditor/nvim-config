@@ -41,5 +41,12 @@ return {
 			},
 			capabilities = capabilities,
 		})
+		lspconfig.clangd.setup({
+			cmd = { "clangd", "--background-index", "--clang-tidy" },
+			flags = {
+				debounce_text_changes = 150,
+			},
+			capabilities = capabilities,
+		})
 	end,
 }
