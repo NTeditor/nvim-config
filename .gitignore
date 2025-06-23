@@ -1,0 +1,16 @@
+*.swp
+*.tmp
+*.log
+
+lua_modules/
+plugin/packer_compiled.lua
+site/
+session/
+nvim-data/
+lazy-lock.json
+*.bak
+*.undo
+*.backup
+*.cache
+
+../nvim-data/
