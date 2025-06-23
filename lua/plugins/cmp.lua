@@ -15,7 +15,7 @@ return {
 					["<C-Space>"] = cmp.mapping.complete(),
 				}),
 			})
-		end,
+		end
 	},
 	{
 		"hrsh7th/cmp-nvim-lsp",

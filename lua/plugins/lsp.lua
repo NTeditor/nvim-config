@@ -1,3 +1,5 @@
+local lspTimeout = 200
+
 return {
 	"neovim/nvim-lspconfig",
 	config = function()
@@ -15,7 +17,7 @@ return {
 				}
 			},
 			flags = {
-				debounce_text_changes = 150,
+				debounce_text_changes = lspTimeout,
 			},
 			capabilities = capabilities,
 		})
@@ -37,16 +39,16 @@ return {
 				},
 			},
 			flags = {
-				debounce_text_changes = 150,
+				debounce_text_changes = lspTimeout,
 			},
 			capabilities = capabilities,
 		})
 		lspconfig.clangd.setup({
 			cmd = { "clangd", "--background-index", "--clang-tidy" },
 			flags = {
-				debounce_text_changes = 150,
+				debounce_text_changes = lspTimeout,
 			},
 			capabilities = capabilities,
 		})
-	end,
+	end
 }
