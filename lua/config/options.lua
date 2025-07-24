@@ -7,3 +7,7 @@ vim.lsp.enable("gopls")
 vim.lsp.enable("clangd")
 vim.wo.number = true
 vim.wo.relativenumber = true
+vim.diagnostic.config({ virtual_text = true })
+require("nvim-tree").setup({
+	view = { float = { enable = true } },
+})
