@@ -5,6 +5,8 @@ vim.opt.clipboard = "unnamedplus"
 vim.lsp.enable("lua_ls")
 vim.lsp.enable("gopls")
 vim.lsp.enable("clangd")
+vim.lsp.enable("bashls")
+vim.lsp.enable("cmake")
 vim.wo.number = true
 vim.wo.relativenumber = true
 vim.diagnostic.config({ virtual_text = true })
