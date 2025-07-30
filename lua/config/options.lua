@@ -7,9 +7,13 @@ vim.lsp.enable("gopls")
 vim.lsp.enable("clangd")
 vim.lsp.enable("bashls")
 vim.lsp.enable("cmake")
+vim.lsp.enable("ts_ls")
 vim.wo.number = true
 vim.wo.relativenumber = true
 vim.diagnostic.config({ virtual_text = true })
 require("nvim-tree").setup({
 	view = { float = { enable = true } },
 })
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 1
+vim.opt.expandtab = false
