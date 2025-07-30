@@ -16,4 +16,14 @@ return {
 	},
 	single_file_support = true,
 	log_level = vim.lsp.protocol.MessageType.Warning,
+	settings = {
+		Lua = {
+			format = {
+				enable = true,
+				defaultConfig = {
+					quote_style = "double",
+				},
+			},
+		},
+	},
 }

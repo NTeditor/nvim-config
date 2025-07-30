@@ -15,5 +15,5 @@ require("nvim-tree").setup({
 	view = { float = { enable = true } },
 })
 vim.opt.tabstop = 2
-vim.opt.shiftwidth = 1
+vim.opt.shiftwidth = 2
 vim.opt.expandtab = false
