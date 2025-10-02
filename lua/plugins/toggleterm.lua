@@ -5,6 +5,6 @@ return {
     direction = "float",
   },
   keys = {
-    { "<leader>tf", "<cmd>ToggleTerm<cr>", desc = "Terminal", mode = { "n", "t" } },
+    { "<leader>tf", "<cmd>ToggleTerm<cr>", desc = "Float terminal", mode = { "n", "t" } },
   },
 }

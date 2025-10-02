@@ -3,6 +3,9 @@ return {
   event = "VeryLazy",
   opts = {
     preset = "helix",
+    spec = {
+      { "<leader>t", group = "Terminal" },
+    },
   },
   keys = {
     {
