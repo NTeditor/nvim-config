@@ -5,10 +5,10 @@ return {
     formatters_by_ft = {
       lua = { "stylua" },
       rust = { "rustfmt" },
-      python = { "isort", "black" },
+      python = { "black" },
     },
     format_on_save = {
-      timeout_ms = 500,
+      timeout_ms = 100,
       lsp_format = "fallback",
     },
   },
@@ -16,7 +16,7 @@ return {
     {
       "<leader>f",
       function()
-        require("conform").format({ async = true, lsp_format = "fallback" })
+        require("conform").format({ async = true, timeout_ms = 100, lsp_format = "fallback" })
       end,
       desc = "Format",
     },
