@@ -8,5 +8,5 @@
 
 return {
   "neovim/nvim-lspconfig",
-  event = "BufReadPre",
+  lazy = false,
 }

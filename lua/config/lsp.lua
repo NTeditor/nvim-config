@@ -12,7 +12,8 @@ vim.lsp.config("rust_analyzer", {
 
 vim.lsp.config("pylsp", {})
 vim.lsp.config("lua_ls", {})
-vim.lsp.enable({ "rust_analyzer", "pylsp", "lua_ls" })
+vim.lsp.config("clangd", {})
+vim.lsp.enable({ "rust_analyzer", "pylsp", "lua_ls", "clangd" })
 
 vim.diagnostic.config({
   virtual_lines = true,
